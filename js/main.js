@@ -8,7 +8,7 @@ if (botonMenu && menu) {
   });
 }
 
-// poner el año en el footer
+
 document.getElementById("anio").textContent = new Date().getFullYear();
 
 // Redirigir el formulario a una página de agradecimiento dentro del mismo sitio.
@@ -17,7 +17,7 @@ if (siguiente) {
   siguiente.value = new URL("gracias.html", window.location.href).href;
 }
 
-// buscador de habilidades sin recargar la página
+
 const formularioBusqueda = document.getElementById("buscar-habilidad");
 const campoBusqueda = document.getElementById("buscar");
 const resultado = document.getElementById("resultado");
@@ -44,7 +44,7 @@ if (formularioBusqueda && campoBusqueda) {
   });
 }
 
-// Conserva el resultado si la página se abre con una dirección como ?buscar=Python
+
 const buscar = new URLSearchParams(window.location.search).get("buscar");
 if (buscar) {
   campoBusqueda.value = buscar;
